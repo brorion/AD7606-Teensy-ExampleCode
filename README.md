@@ -1,20 +1,14 @@
-# AD7606-Teensy-Library
-Library for the AD7606 16-bit ADC for the Teensy 4.1
+# AD7606-Teensy-ExampleCode
+Was supposed to be a library for the AD7606 16-bit ADC for the Teensy 4.1, but implementation as such ended at the writing of an example code as it was sufficient for my purposes.
 
-Currently a WIP
+The AD7606 was configured to transfer data in a parallel format, so that was what this example code was written for. For this, direct port manipulation was used to retrieve the states of the digital pins, with the ports configured for the Teensy 4.1. 
 
 # TODO:
 (DONE) Write arduino test code that can operate at full speed
 
 (Partially implemented) Manage data storage (saving all 8 channels at 200kSPS would require 3.2MB per second of data. Even with 8+8 MB of PSRAM, the max amount of data is roughly 4 seconds)
 
-Write library to make things neater
-
-Add more documentation here - pinouts, links to resources, how to modify the code for other configurations
-
-Add better timers that dynamically change to match clock speeds?
-
-Add support for other data modes? (Low priority)
+Add more documentation here - pinouts, links to resources, how to modify the code for other configurations (see Documentation section below)
 
 # Documentation
 Teensy schematic for pinout to native GPIO label mapping: https://www.pjrc.com/teensy/schematic.html
