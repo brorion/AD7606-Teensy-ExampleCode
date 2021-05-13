@@ -3,6 +3,8 @@ Was supposed to be a library for the AD7606 16-bit ADC for the Teensy 4.1, but i
 
 The AD7606 was configured to transfer data in a parallel format, so that was what this example code was written for. For this, direct port manipulation was used to retrieve the states of the digital pins, with the ports configured for the Teensy 4.1. 
 
+There are two versions of the example code, fastRead and slowRead. slowRead triggers the conversion of the next data after reading in the current set of data, while fastRead triggers the conversion first, and reads the data in an ISR on the rising edge of the busy pin. fastRead can definitely reach the full conversion rate of the AD7606, and possibly slightly faster, but it may be less stable; slowRead only reaches a conversion rate of approx. 198kSPS, but there are fewer things to complicate it. 
+
 # TODO:
 (DONE) Write arduino test code that can operate at full speed
 
