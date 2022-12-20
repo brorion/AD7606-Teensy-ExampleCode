@@ -27,30 +27,55 @@ Haven't tried this, but it should be possible to do a similar thing for writing 
 
 # PINOUT
 AD7606 pins : Teensy pins
+
 DB0         : 19
+
 DB1         : 18
+
 DB2         : 14
+
 DB3         : 15
+
 DB4         : 40
+
 DB5         : 41
+
 DB6         : 17
+
 DB7         : 16
+
 DB8         : 22
+
 DB9         : 23
+
 DB10        : 20
+
 DB11        : 21
+
 DB12        : 38
+
 DB13        : 39
+
 DB14        : 26
+
 DB15        : 27
+
 CV          : 24
+
 RD          : 25
+
 BUSY        : 35
+
 CS          : 34
+
 RST         : 36
+
 OS0         : GND
+
 OS1         : GND (change to 3.3V to reduce sampling rate to 50kSPS. For other sampling rates, check the AD7606 datasheet.)
+
 OS2         : GND
+
 RANGE       : 3.3V
 
 # CHANGELOG
